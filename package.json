@@ -1,0 +1,22 @@
+{
+  "name": "formacion_empresas",
+  "version": "1.0.0",
+  "description": "curso 2020-1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TitoYanac/ECPROJECT.git"
+  },
+  "keywords": [
+    "ECPROJECT"
+  ],
+  "author": "GRUPO DEL CURSO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TitoYanac/ECPROJECT/issues"
+  },
+  "homepage": "https://github.com/TitoYanac/ECPROJECT#readme"
+}
