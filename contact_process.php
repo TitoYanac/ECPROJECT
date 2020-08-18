@@ -1,6 +1,6 @@
 <?php
 
-    $to = "spn8@spondonit.com";
+    $to = "titoyanac@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -15,13 +15,13 @@
 
     $subject = "You have a message from your Bitmap Photography.";
 
-    $logo = 'img/logo.png';
+    $logo2 = 'img/logo2.png';
     $link = '#';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
 	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
-	$body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
+	$body .= "<a href='{$link}'><img src='{$logo2}' alt=''></a><br><br>";
 	$body .= "</td></tr></thead><tbody><tr>";
 	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
 	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
@@ -33,5 +33,7 @@
 	$body .= "</body></html>";
 
     $send = mail($to, $subject, $body, $headers);
+
+    echo "hola mundo";
 
 ?>
