@@ -1,8 +1,64 @@
+
 #app1{
 	position: relative;
 }
-.Grupo_login{
-	position: absolute;
-	top: 60px;
-	right: 0px;
+.Grupo_login {
+    position: absolute;
+    top: 85px;
+    right: 0px;
+    width: 250px;
+    text-align: right;
+    background: white;
 }
+.Grupo_login ul , .Grupo_login li {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding: 8px;
+    border-bottom: 2px #00D363 solid;
+    min-height: 55px;
+    line-height: 55px;
+}
+
+.Grupo_login li:nth-child(1) {
+	border-top: 2px #00D363 solid;
+}
+.Grupo_login a:hover {
+	background: #00D363;
+	color: white;
+	border: 2px white solid;
+}
+#btn-google {
+    width: 120px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+#btn-fb {
+    transform: translateY(-23%);
+}
+.Grupo_login a {
+	text-decoration: none;
+	color: black;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	border: 2px white solid;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+.active {
+    color: #00D363 !important;
+    border: 1px solid #00D363;
+    background: transparent;
+}
+
+.noselect{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#imgUsuario{width:40px; height: 40px; border-radius: 50%;}
