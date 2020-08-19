@@ -1,6 +1,9 @@
 var usuariologeado = document.getElementById("usuariologeado");
 var iniciasesion = document.getElementById("iniciasesion");
 var btnlogout = document.getElementById("btnlogout");
+var opPerfil = document.getElementById("opPerfil");
+var oplogin = document.getElementById("oplogin");
+
 
 
 function onSignIn(googleUser) {
@@ -24,18 +27,18 @@ function mostrarmenuUsuario() {
     document.getElementById("usuario").innerHTML = profile.getName();
     document.getElementById("imgUsuario").setAttribute("src", profile.getImageUrl() );
 
-    document.getElementById("usuariologeado").style.display = "block";
-    document.getElementById("opPerfil").style.display = "none";
+    usuariologeado.style.display = "block";
+    opPerfil.style.display = "none";
 
-    document.getElementById("oplogin").style.display = "none";
-    document.getElementById("iniciasesion").style.display = "none";
+    oplogin.style.display = "none";
+    iniciasesion.style.display = "none";
 }
 function mostrarmenuLogin() {
-    document.getElementById("usuariologeado").style.display = "none";
-    document.getElementById("opPerfil").style.display = "none";
+    usuariologeado.style.display = "none";
+    opPerfil.style.display = "none";
 
-    document.getElementById("oplogin").style.display = "block";
-    document.getElementById("iniciasesion").style.display = "block";
+    oplogin.style.display = "block";
+    iniciasesion.style.display = "block";
 }
 mostrarmenuLogin();
 
